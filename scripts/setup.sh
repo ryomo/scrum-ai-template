@@ -89,11 +89,11 @@ Done. Finish these in the browser ($url):
      select $repo, set the filter to is:issue,pr, and click "Save and turn on workflow".
      Copying a Project does not copy this workflow. It is not "Item added to project",
      nor the "Default repository" in the Project settings
-  2. Settings > Sprint: add the first Iteration titled "Sprint 1",
-     with the start date and length you want. Its Sprint Goal is added at Sprint Planning
+  2. Settings > Sprint: add the first Iteration titled "Sprint 1", with the length you want.
+     Start it on the day of the first Sprint Planning; a past date shortens the first Sprint.
+     Its Sprint Goal is added at Sprint Planning
   3. Edit the Sprint section of the Project README if you changed the length or start day
 Then commit .agents/skills/backlog/config.json.
 
-At the first Sprint Planning, fill in AGENTS.md, docs/DEFINITION_OF_DONE.md,
-and docs/STORY_POINTS.md for your product.
+Next, hold the first Sprint Planning: see "The first Sprint Planning" in docs/SCRUM.md.
 EOF

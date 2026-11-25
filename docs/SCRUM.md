@@ -102,6 +102,18 @@ The expected outcome describes only what users will be able to do, not how it wi
 Decide the Sprint Goal and the PBIs for the Sprint.
 Record it as a comment on the Sprint issue, copying the [template](templates/sprint-planning.md).
 
+### The first Sprint Planning
+
+Held right after setup, when there may be no Product Goal, no issues, and no code yet.
+Go through these in order:
+
+1. Decide the Product Goal and file it as a `product-goal` issue. The Sprint Goal has to lead toward it
+2. File the first PBIs. Refining them inside Sprint Planning is fine when the Product Backlog is empty
+3. Decide the Sprint Goal and the PBIs for the Sprint, as in any Sprint Planning
+4. Fill in `AGENTS.md`, `docs/DEFINITION_OF_DONE.md`, and `docs/STORY_POINTS.md`.
+   These are part of Sprint Planning, not PBIs: no PBI can be judged Done without the Definition of Done.
+   They come last because their contents depend on the product and its technology
+
 ## Sprint Review
 
 Try the Increment of the Sprint hands-on. Turn improvements into new PBIs or update existing ones.
