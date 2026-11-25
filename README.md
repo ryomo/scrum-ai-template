@@ -7,6 +7,15 @@ Tested with Claude Code in solo development. Team use has not been tried yet.
 
 ## Setup
 
+The steps below are meant to be run by an AI agent, with you handling the parts that need a browser.
+Create your repository with "Use this template", clone it, and give the agent something like this:
+
+```text
+Set up this repository by following the Setup section of README.md.
+Before running scripts/setup.sh, read it and tell me what it will create, change, or delete
+on GitHub, and wait for my OK. When done, list what I need to do in the browser.
+```
+
 1. Click "Use this template" to create your repository, and clone it
 2. Run `scripts/setup.sh` (needs `gh auth refresh -s project` and python3).
    It creates the labels, copies the GitHub Project, and links it to your repository
