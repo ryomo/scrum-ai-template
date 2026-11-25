@@ -1,7 +1,7 @@
 [
   { "name": "enhancement", "color": "a2eeef", "description": "A PBI that adds or improves value for users" },
   { "name": "bug", "color": "d73a4a", "description": "Fixes something that does not work as expected" },
-  { "name": "documentation", "color": "0075ca", "description": "Adds or reorganizes documentation, including instructions for AI agents. Does not change product behavior" },
+  { "name": "documentation", "color": "0075ca", "description": "Adds or reorganizes documentation, including instructions for AI agents. Does not change behavior" },
   { "name": "devex", "color": "3983c3", "description": "Developer experience: improvements to development and operations that users cannot see" },
   { "name": "needs-refinement", "color": "e99695", "description": "Refinement not finished. Starting now risks rework" },
   { "name": "wontfix", "color": "ffffff", "description": "Decided not to do. Leave the reason in a comment and close" },
