@@ -99,8 +99,9 @@ The expected outcome describes only what users will be able to do, not how it wi
 
 ## Sprint Planning
 
-Decide the Sprint Goal and the PBIs for the Sprint.
-Record it as a comment on the Sprint issue, copying the [template](templates/sprint-planning.md).
+Decide the Sprint Goal first, leading toward the Product Goal. Then select the PBIs within the capacity.
+File the `sprint` issue once the goal is decided, and record the Planning as a comment on it,
+copying the [template](templates/sprint-planning.md).
 
 ## Sprint Review
 

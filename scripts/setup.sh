@@ -90,18 +90,18 @@ Done. Finish these in the browser ($url):
      Copying a Project does not copy this workflow. It is not "Item added to project",
      nor the "Default repository" in the Project settings
   2. Settings > Sprint: add the first Iteration titled "Sprint 1", with the length you want.
-     Its start date and Sprint Goal are settled at the first Sprint Planning
+     Its start date is settled while preparing for Sprint Planning (below),
+     and its Sprint Goal at Sprint Planning
   3. Edit the Sprint section of the Project README if you changed the length or start day
-Then commit .agents/skills/backlog/config.json.
 
-Next, hold the first Sprint Planning. There may be no Product Goal, issues, or code yet,
-so go through these in order:
-  1. Ask whether the first Sprint starts today with the full length,
-     or on the regular start day even if that makes it shorter. Adjust the Iteration to match
-  2. Decide the Product Goal and file it as a product-goal issue. The Sprint Goal leads toward it
-  3. File the first PBIs. With an empty Product Backlog, refining them during Planning is fine
-  4. Decide the Sprint Goal and the PBIs for the Sprint, as docs/SCRUM.md describes
-  5. Fill in AGENTS.md, docs/DEFINITION_OF_DONE.md, and docs/STORY_POINTS.md.
-     They are part of this Planning, not PBIs: no PBI can be judged Done without the
-     Definition of Done. They come last because they depend on the product and its technology
+Then, in this session, prepare for the first Sprint Planning:
+  1. Decide the first Sprint's start date: today with the full length,
+     or the regular start day even if shorter. Adjust the Iteration to match
+  2. Decide the Product Goal and file it as a product-goal issue
+  3. File the first PBIs and order them
+  4. Fill in AGENTS.md (product, stack, commands) and docs/DEFINITION_OF_DONE.md.
+     Sprint Planning needs them to forecast and plan the work
+  5. Commit .agents/skills/backlog/config.json and these files, and merge them into main
+Then start a new session and hold Sprint Planning as docs/SCRUM.md describes
+(e.g. "Hold Sprint Planning for Sprint 1").
 EOF

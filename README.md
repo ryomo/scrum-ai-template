@@ -20,9 +20,10 @@ on GitHub, and wait for my OK. When done, list what I need to do in the browser.
 2. Run `scripts/setup.sh` (needs `gh auth refresh -s project` and python3).
    It creates the labels, copies the GitHub Project, and links it to your repository
 3. Finish the steps the script prints (Auto-add workflow and Sprint settings in the browser)
-
-Then hold the first Sprint Planning, following the steps the script prints.
-That is also where `AGENTS.md`, `docs/DEFINITION_OF_DONE.md`, and `docs/STORY_POINTS.md` get filled in.
+4. In the same session, prepare for the first Sprint Planning as the script prints:
+   the first Sprint's start date, the Product Goal, the first PBIs, `AGENTS.md`, and `docs/DEFINITION_OF_DONE.md`.
+   Then merge them and `.agents/skills/backlog/config.json` into main
+5. Start a new session and hold Sprint Planning (e.g. "Hold Sprint Planning for Sprint 1")
 
 The Sprint length defaults to 1 week. Change it to fit your team.
 
