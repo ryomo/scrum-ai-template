@@ -21,7 +21,7 @@ on GitHub, and wait for my OK. When done, list what I need to do in the browser.
    It creates the labels, copies the GitHub Project, and links it to your repository
 3. Finish the steps the script prints (Auto-add workflow and Sprint settings in the browser)
 
-Then hold the first Sprint Planning, following "The first Sprint Planning" in `docs/SCRUM.md`.
+Then hold the first Sprint Planning, following the steps the script prints.
 That is also where `AGENTS.md`, `docs/DEFINITION_OF_DONE.md`, and `docs/STORY_POINTS.md` get filled in.
 
 The Sprint length defaults to 1 week. Change it to fit your team.

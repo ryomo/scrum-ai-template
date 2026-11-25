@@ -90,10 +90,18 @@ Done. Finish these in the browser ($url):
      Copying a Project does not copy this workflow. It is not "Item added to project",
      nor the "Default repository" in the Project settings
   2. Settings > Sprint: add the first Iteration titled "Sprint 1", with the length you want.
-     Start it on the day of the first Sprint Planning; a past date shortens the first Sprint.
-     Its Sprint Goal is added at Sprint Planning
+     Its start date and Sprint Goal are settled at the first Sprint Planning
   3. Edit the Sprint section of the Project README if you changed the length or start day
 Then commit .agents/skills/backlog/config.json.
 
-Next, hold the first Sprint Planning: see "The first Sprint Planning" in docs/SCRUM.md.
+Next, hold the first Sprint Planning. There may be no Product Goal, issues, or code yet,
+so go through these in order:
+  1. Ask whether the first Sprint starts today with the full length,
+     or on the regular start day even if that makes it shorter. Adjust the Iteration to match
+  2. Decide the Product Goal and file it as a product-goal issue. The Sprint Goal leads toward it
+  3. File the first PBIs. With an empty Product Backlog, refining them during Planning is fine
+  4. Decide the Sprint Goal and the PBIs for the Sprint, as docs/SCRUM.md describes
+  5. Fill in AGENTS.md, docs/DEFINITION_OF_DONE.md, and docs/STORY_POINTS.md.
+     They are part of this Planning, not PBIs: no PBI can be judged Done without the
+     Definition of Done. They come last because they depend on the product and its technology
 EOF
