@@ -1,0 +1,3 @@
+docs/drafts/*
+!docs/drafts/.gitkeep
+__pycache__/

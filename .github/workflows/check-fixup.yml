@@ -1,0 +1,46 @@
+# Shows a failure on a PR that still has fixup! / squash! / amend! commits, so they are not merged unsquashed.
+# The job itself never fails: stacking fixups during review is the normal workflow,
+# and a failed job would send a notification for following it.
+# Instead the result is set as a commit status on the PR head, which shows in the checks without notifying.
+# To block merging, make "Unsquashed commits" a required status check (not available for private repos on the Free plan).
+
+name: Unsquashed commits
+
+on:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      statuses: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+
+      - name: Look for fixup commits and set the result as a commit status
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          found=$(git log --format='%h %s' "$BASE_SHA..$HEAD_SHA" | grep -E '^[0-9a-f]+ (fixup|squash|amend)! ' || true)
+          if [ -n "$found" ]; then
+            state=failure
+            description="Squash with git rebase --autosquash main before merging"
+            echo "::warning::$description"
+            echo "$found"
+          else
+            state=success
+            description="No fixup commits"
+          fi
+          gh api "repos/$REPO/statuses/$HEAD_SHA" \
+            -f state="$state" \
+            -f context="Unsquashed commits" \
+            -f description="$description" \
+            -f target_url="$RUN_URL"

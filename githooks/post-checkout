@@ -1,0 +1,8 @@
+#!/bin/sh
+# Cleans up old drafts on branch switches. Switching branches roughly means starting a new PBI,
+# which is often enough. Enabled by scripts/setup.sh (git config core.hooksPath githooks).
+
+# The third argument is 1 for a branch checkout and 0 for a file checkout
+[ "$3" = "1" ] || exit 0
+
+"$(git rev-parse --show-toplevel)/scripts/cleanup-drafts.sh"
