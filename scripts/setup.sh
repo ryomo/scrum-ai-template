@@ -83,8 +83,8 @@ cat <<EOF
 
 Done. Finish these in the browser ($url):
   1. Workflows > "Auto-add to project": select $repo, set the filter to is:issue,pr, and enable it
-  2. Settings > Sprint: set the Sprint length and start day, and add the first Iteration
-     titled "Sprint 1: <Sprint Goal>"
+  2. Settings > Sprint: add the first Iteration titled "Sprint 1: <Sprint Goal>",
+     with the start date and length you want
   3. Edit the Sprint section of the Project README if you changed the length
 Then commit .agents/skills/backlog/config.json.
 EOF
