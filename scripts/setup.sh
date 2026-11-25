@@ -15,7 +15,7 @@
 set -eu
 
 TEMPLATE_OWNER=ryomo
-TEMPLATE_PROJECT=0 # TODO: number of the template Project
+TEMPLATE_PROJECT=8
 
 project=""
 prune=false
