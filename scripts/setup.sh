@@ -99,7 +99,8 @@ Then, in this session, prepare for the first Sprint Planning:
      or the regular start day even if shorter. Adjust the Iteration to match
   2. Decide the Product Goal and file it as a product-goal issue
   3. File the first PBIs and order them
-  4. Fill in AGENTS.md (product, stack, commands) and docs/DEFINITION_OF_DONE.md.
+  4. Fill in AGENTS.md (product, stack, commands, who merges PRs and how)
+     and docs/DEFINITION_OF_DONE.md.
      Sprint Planning needs them to forecast and plan the work
   5. Commit .agents/skills/backlog/config.json and these files, and merge them into main
 Then start a new session and hold Sprint Planning as docs/SCRUM.md describes

@@ -35,6 +35,7 @@ The Product Goal, Sprints, and PBIs are managed in GitHub Projects. Read them wi
 ## Commits and PRs
 
 - Work on a branch from main
+- Do not merge PRs; the human merges them
 - Commit messages are one line per issue, prefixed with `feat:` / `fix:` / `docs:` / `refactor:` etc.
   Reasons and `Closes #N` go in the PR body, not the commit message
 - Write the PR body by copying `.github/pull_request_template.md` and following its comments
