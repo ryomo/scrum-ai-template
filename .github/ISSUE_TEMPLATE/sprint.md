@@ -10,7 +10,8 @@ Write the Sprint Goal itself as the title.
   Good: Sprint 3: English-speaking users can use the app
   Bad:  Sprint 3: i18n
 
-Use the same text as the title of the Iteration added in the Project settings.
+Use the same text as the title of the Iteration in the Project settings.
+If the Iteration is titled just "Sprint N", add the goal to it.
 -->
 
 <!--

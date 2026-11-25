@@ -92,7 +92,8 @@ The Scrum Team fulfills (or abandons) one Product Goal before taking on the next
 ## Sprint Goal
 
 Write it as `Sprint N: <Sprint Goal>` in both the title of the `sprint` issue
-and the title of the Iteration added in the Project settings.
+and the title of the Iteration in the Project settings.
+Iterations are added ahead of time titled just `Sprint N`; add the goal to the title at Sprint Planning.
 
 The expected outcome describes only what users will be able to do, not how it will be built.
 

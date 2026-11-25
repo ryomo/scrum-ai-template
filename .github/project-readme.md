@@ -4,7 +4,7 @@
 
 ## Sprint
 
-- 1 week, Monday to Friday
+- 1 week (7 days), starting Monday
 - Change this to fit your team, and set the same length and start day in the Sprint field settings
 
 ## Views

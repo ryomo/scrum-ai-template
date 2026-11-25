@@ -44,12 +44,15 @@ for label in json.load(open(".github/labels.json")):
     print("\t".join((label["name"], label["color"], label["description"])))
 ' | while IFS="$(printf '\t')" read -r name color description; do
   gh label create "$name" --repo "$repo" --color "$color" --description "$description" --force
+  # Print the result here because gh prints nothing when stdout is not a terminal
+  echo "Created or updated: $name"
 done
 if $prune; then
   keep=$(python3 -c 'import json; print("\n".join(l["name"] for l in json.load(open(".github/labels.json"))))')
   gh label list --repo "$repo" --limit 200 --json name --jq '.[].name' | while read -r name; do
     if ! printf '%s\n' "$keep" | grep -qxF "$name"; then
       gh label delete "$name" --repo "$repo" --yes
+      echo "Deleted: $name"
     fi
   done
 fi
@@ -82,9 +85,15 @@ url=$(gh project view "$project" --owner "$owner" --format json --jq .url)
 cat <<EOF
 
 Done. Finish these in the browser ($url):
-  1. Workflows > "Auto-add to project": select $repo, set the filter to is:issue,pr, and enable it
-  2. Settings > Sprint: add the first Iteration titled "Sprint 1: <Sprint Goal>",
-     with the start date and length you want
-  3. Edit the Sprint section of the Project README if you changed the length
+  1. Workflows > Default workflows > "Auto-add to project" > Edit > Filters:
+     select $repo, set the filter to is:issue,pr, and click "Save and turn on workflow".
+     Copying a Project does not copy this workflow. It is not "Item added to project",
+     nor the "Default repository" in the Project settings
+  2. Settings > Sprint: add the first Iteration titled "Sprint 1",
+     with the start date and length you want. Its Sprint Goal is added at Sprint Planning
+  3. Edit the Sprint section of the Project README if you changed the length or start day
 Then commit .agents/skills/backlog/config.json.
+
+At the first Sprint Planning, fill in AGENTS.md, docs/DEFINITION_OF_DONE.md,
+and docs/STORY_POINTS.md for your product.
 EOF
