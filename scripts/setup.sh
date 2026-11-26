@@ -101,7 +101,9 @@ Then, in this session, prepare for the first Sprint Planning:
   3. File the first PBIs and order them
   4. Fill in AGENTS.md (product, stack, commands, who merges PRs and how)
      and docs/DEFINITION_OF_DONE.md.
-     Sprint Planning needs them to forecast and plan the work
+     Sprint Planning needs them to forecast and plan the work.
+     Also decide whether agents keep posting How comments on PBIs
+     without waiting for instructions (the default in AGENTS.md)
   5. Commit .agents/skills/backlog/config.json and these files, and merge them into main
 Then start a new session and hold Sprint Planning as docs/SCRUM.md describes
 (e.g. "Hold Sprint Planning for Sprint 1").

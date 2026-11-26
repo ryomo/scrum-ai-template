@@ -32,6 +32,13 @@ PBIs that must be finished first, or that conflict if worked on at the same time
 Write "None" if there are none.
 -->
 
+### Not yet refined
+
+<!--
+Fill in when Planning ends. Selected PBIs whose refinement was left for before their implementation.
+Delete this heading if all of them were refined at Planning.
+-->
+
 ### Left out
 
 <!--

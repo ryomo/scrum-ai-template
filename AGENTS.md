@@ -17,11 +17,9 @@ The Product Goal, Sprints, and PBIs are managed in GitHub Projects. Read them wi
 
 ## Working on a PBI
 
-- Before implementing:
-  - Refine with the human and update the body if needed (always, if it has `needs-refinement`)
-  - Post How as a comment on the issue without waiting for instructions
-  - Get the human's approval to start implementing
-- Before the PR: check off the met acceptance criteria and delete resolved "Open questions"
+- Before implementing, finish whatever refinement Sprint Planning left (see "Sprint Planning" in `docs/SCRUM.md`).
+  Post the How comment without waiting for instructions
+- Get the human's approval to start implementing
 
 ## Writing for humans
 

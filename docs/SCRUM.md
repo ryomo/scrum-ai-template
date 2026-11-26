@@ -38,6 +38,9 @@ How contains only the approach, why it was chosen over alternatives, and the pit
 Leave out per-file steps, code snippets, and detailed API or DB shapes; the implementer decides those.
 Aim for about 30 lines. If it gets longer, treat that as a sign to split into sub-issues rather than trimming.
 
+If the PBI adds or changes UI, agree on its look with the Product Owner before implementing:
+attach a mockup image to the issue body, or make a mockup and have the Product Owner check it.
+
 If acceptance criteria or notes are added before implementation, re-estimate the Story Points.
 If the scope grew a lot, split the added part into another PBI.
 Do not adjust points after the work to match the actual effort.
@@ -80,7 +83,7 @@ Only rules that a single label's description cannot express are written here.
 
 - Every issue has exactly one type label: `bug` / `enhancement` / `documentation` / `devex`
 - `needs-refinement` is used together with a type label. It only warns of rework risk;
-  it does not decide whether the item may enter a Sprint
+  it does not decide whether the item may enter a Sprint. Refine the item before implementing it
 - Issues closed without being done always get `wontfix`, so completed PBIs can be counted with `-label:wontfix`.
   Add `no:parent-issue` so sub-issues are not counted separately from their parent
 
@@ -102,6 +105,11 @@ The expected outcome describes only what users will be able to do, not how it wi
 Decide the Sprint Goal first, leading toward the Product Goal. Then select the PBIs within the capacity.
 File the `sprint` issue once the goal is decided, and record the Planning as a comment on it,
 copying the [template](templates/sprint-planning.md).
+
+Then refine the selected PBIs as far as possible: update the body with the Product Owner if needed,
+write How, and agree on the look of UI changes (see "Writing PBIs").
+The Scrum Team may end Planning before all of them are refined; the rest are refined before each is implemented.
+When Planning ends, update the record: fill in "Not yet refined", and the capacity if refinement changed the Story Points.
 
 ## Sprint Review
 
