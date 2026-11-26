@@ -48,8 +48,8 @@ Users can search the body of saved notes and open a matching note.
 Non-functional example:
 Startup time stays practical as the number of notes grows.
 
-If it adds or changes UI, attach a mockup image here if you have one.
-Otherwise the look is agreed on with a mockup before implementation.
+If it adds or changes UI, you may attach a mockup image here if you have one.
+Either way, the look is agreed on with a mockup before implementation.
 -->
 
 ## Acceptance criteria

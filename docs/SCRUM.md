@@ -38,8 +38,8 @@ How contains only the approach, why it was chosen over alternatives, and the pit
 Leave out per-file steps, code snippets, and detailed API or DB shapes; the implementer decides those.
 Aim for about 30 lines. If it gets longer, treat that as a sign to split into sub-issues rather than trimming.
 
-If the PBI adds or changes UI, agree on its look with the Product Owner before implementing:
-attach a mockup image to the issue body, or make a mockup and have the Product Owner check it.
+If the PBI adds or changes UI, agree on its look before implementing:
+make a mockup that opens in a browser and have the Product Owner check it.
 
 If acceptance criteria or notes are added before implementation, re-estimate the Story Points.
 If the scope grew a lot, split the added part into another PBI.
