@@ -10,6 +10,8 @@ The Product Goal, Sprints, and PBIs are managed in GitHub Projects. Read them wi
 
 - Do not write to the Project or issues (adding items, changing status, commenting) without being told to,
   except for refinement comments on a PBI (How and the agreed mockup; see "Sprint Planning" in docs/SCRUM.md)
+  and the edits to the issue body that the PR's "Checked" section asks for
+  (ticking met acceptance criteria, deleting resolved "Open questions")
 - Issues are added to the Project automatically; do not add them separately
 - Never reorder Project items
 - Iterations (Sprints) are added by a human in the Project settings. Adding them through the API
@@ -37,7 +39,9 @@ The Product Goal, Sprints, and PBIs are managed in GitHub Projects. Read them wi
 - Commit messages are one line per issue, prefixed with `feat:` / `fix:` / `docs:` / `refactor:` etc.
   Reasons and `Closes #N` go in the PR body, not the commit message
 - Write the PR body by copying `.github/pull_request_template.md` and following its comments
-  (passing `--body-file` skips the template)
+  (passing `--body-file` skips the template).
+  Do what its "Checked" section asks and tick each item done, without waiting to be told.
+  Leave an item unticked when it is not met, and say why in the PR body
 - Commit when implementation is done, even without being told.
   Before committing, review the comments in the diff with the `review-comments` skill
 - Stack fixes after a human review with `git commit --fixup`.
