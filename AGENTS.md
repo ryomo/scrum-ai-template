@@ -9,7 +9,7 @@ Development follows Scrum. Working rules: `docs/SCRUM.md`. Definition of Done: `
 The Product Goal, Sprints, and PBIs are managed in GitHub Projects. Read them with the `backlog` skill.
 
 - Do not write to the Project or issues (adding items, changing status, commenting) without being told to,
-  except for the How comment on a PBI (see below)
+  except for refinement comments on a PBI (How and the agreed mockup; see "Sprint Planning" in docs/SCRUM.md)
 - Issues are added to the Project automatically; do not add them separately
 - Never reorder Project items
 - Iterations (Sprints) are added by a human in the Project settings. Adding them through the API

@@ -40,6 +40,8 @@ Aim for about 30 lines. If it gets longer, treat that as a sign to split into su
 
 If the PBI adds or changes UI, agree on its look before implementing:
 make a mockup that opens in a browser and have the Product Owner check it.
+Attach an image of the agreed mockup to a comment on the issue (e.g. `gh issue comment --attach`),
+so that whoever implements it can see it.
 
 If acceptance criteria or notes are added before implementation, re-estimate the Story Points.
 If the scope grew a lot, split the added part into another PBI.
