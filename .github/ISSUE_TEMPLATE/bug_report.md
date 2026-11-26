@@ -86,6 +86,7 @@ Example:
 
 <!--
 What is not yet decided or confirmed. May be empty. Delete each item once resolved.
+While anything remains here, keep the `needs-refinement` label.
 
 Example:
 - Not yet checked whether it reproduces in other browsers

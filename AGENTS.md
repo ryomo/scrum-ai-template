@@ -8,10 +8,11 @@ Development follows Scrum. Working rules: `docs/SCRUM.md`. Definition of Done: `
 
 The Product Goal, Sprints, and PBIs are managed in GitHub Projects. Read them with the `backlog` skill.
 
-- Do not write to the Project or issues (adding items, changing status, commenting) without being told to,
-  except for refinement comments on a PBI (How and the agreed mockup; see "Sprint Planning" in docs/SCRUM.md)
-  and the edits to the issue body that the PR's "Checked" section asks for
-  (ticking met acceptance criteria, deleting resolved "Open questions")
+- Do not write to the Project or issues (adding items, changing status, commenting) without being told to, except:
+  - the How comment and the agreed-mockup comment on a PBI (see "Writing PBIs" in docs/SCRUM.md)
+  - the edits to the issue body that the PR's "Checked" section asks for
+    (ticking met acceptance criteria, deleting resolved "Open questions")
+  - removing `needs-refinement` once its conditions hold (see "Labels" in docs/SCRUM.md)
 - Issues are added to the Project automatically; do not add them separately
 - Never reorder Project items
 - Iterations (Sprints) are added by a human in the Project settings. Adding them through the API
@@ -19,8 +20,10 @@ The Product Goal, Sprints, and PBIs are managed in GitHub Projects. Read them wi
 
 ## Working on a PBI
 
-- Before implementing, finish whatever refinement Sprint Planning left (see "Sprint Planning" in `docs/SCRUM.md`).
+- Before implementing, finish what Sprint Planning left (see "Sprint Planning" in `docs/SCRUM.md`).
   Post the How comment without waiting for instructions
+- To change the issue body, put the proposed body in `docs/drafts/`, tell the human what changes and why,
+  and apply it once approved
 - Get the human's approval to start implementing
 
 ## Writing for humans

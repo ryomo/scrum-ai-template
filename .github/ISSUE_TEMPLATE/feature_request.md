@@ -90,6 +90,7 @@ Functional example:
 
 <!--
 What is not yet decided. May be empty. Delete each item once resolved.
+While anything remains here, keep the `needs-refinement` label.
 
 Functional example:
 - Should file names be searched too, or ship body-only first?

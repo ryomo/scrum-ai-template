@@ -31,6 +31,8 @@ Improvements from a Sprint Retrospective may also go straight into the next Spri
 Write Why / What / Acceptance criteria, using the templates in `.github/ISSUE_TEMPLATE/`.
 
 The issue body (Why, What, Acceptance criteria, Out of scope) belongs to the Product Owner.
+Developers may propose edits to it, for example when refinement adds acceptance criteria or resolves Open questions,
+and apply them once the Product Owner approves.
 Developers do not add How to it. They write How as a comment on the issue,
 or split it into sub-issues if it needs separate PRs.
 
@@ -84,8 +86,14 @@ The meaning of each label is in its description on GitHub (source: `.github/labe
 Only rules that a single label's description cannot express are written here.
 
 - Every issue has exactly one type label: `bug` / `enhancement` / `documentation` / `devex`
-- `needs-refinement` is used together with a type label. It only warns of rework risk;
-  it does not decide whether the item may enter a Sprint. Refine the item before implementing it
+- `needs-refinement` is used together with a type label. File a PBI with it unless both of these hold,
+  and remove it once they do:
+  - "Open questions" is empty
+  - If the PBI adds or changes UI, the mockup is agreed and attached to the issue
+
+  Both need the Product Owner's decisions. How and Story Points are the Developers' and are not conditions.
+  The label only warns of rework risk; it does not decide whether the item may enter a Sprint.
+  Refine the item before implementing it
 - Issues closed without being done always get `wontfix`, so completed PBIs can be counted with `-label:wontfix`.
   Add `no:parent-issue` so sub-issues are not counted separately from their parent
 
@@ -108,10 +116,11 @@ Decide the Sprint Goal first, leading toward the Product Goal. Then select the P
 File the `sprint` issue once the goal is decided, and record the Planning as a comment on it,
 copying the [template](templates/sprint-planning.md).
 
-Then refine the selected PBIs as far as possible: update the body with the Product Owner if needed,
-write How, and agree on the look of UI changes (see "Writing PBIs").
-The Scrum Team may end Planning before all of them are refined; the rest are refined before each is implemented.
-When Planning ends, update the record: fill in "Not yet refined", and the capacity if refinement changed the Story Points.
+Then, for each selected PBI, refine it with the Product Owner (update the body if needed,
+agree on the look of UI changes), and the Developers write How (see "Writing PBIs").
+Go as far as possible. The Scrum Team may end Planning early; the rest is done before each PBI is implemented.
+When Planning ends, update the record: fill in "Not yet refined", and the capacity if Story Points changed during Planning.
+Changes after Planning are not reflected in the record.
 
 ## Sprint Review
 

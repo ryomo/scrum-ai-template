@@ -35,8 +35,8 @@ Write "None" if there are none.
 ### Not yet refined
 
 <!--
-Fill in when Planning ends. Selected PBIs whose refinement was left for before their implementation.
-Delete this heading if all of them were refined at Planning.
+Fill in when Planning ends. Selected PBIs that still have the `needs-refinement` label.
+Delete this heading if none do.
 -->
 
 ### Left out
